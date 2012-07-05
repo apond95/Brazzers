@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Brazzers Overlay!</title>
+                <style>
+                        body { padding: 10px; 
+				background-color: #FFF; }
+			table {	background-color: #FFF; -moz-box-shadow: 10px 10px 5px #888;
+							-webkit-box-shadow: 10px 10px 5px #888;
+							box-shadow: 10px 10px 5px #888; }
+	        </style>
+</head>
+<body>
+        <p><strong>Please note, I hold no responsibility for any images posted on this system.</strong></p>
+        <table width="80%" border="0" align="center">
+        <tr>
+        <td>Feed me a JPG from your PC or from a website:</td>
+                  </tr>
+                  <tr>
+                    <td>{% if form %}
+                <form enctype="multipart/form-data" method="post" action="">
+			{% csrf_token %}
+                        {{ form.as_p }}
+                <div><input type="submit"></div>
+                </form>
+                {% else %}
+                <p>Doesn't look like I managed to pass a form to the context.</p>
+                {% endif %}</td>
+                  </tr>
+                  <tr>
+                    <td>Or Click Here to see the <a href="http://brazzers.im-so.pro/archive/">ARCHIVE</a></td>
+                  </tr>
+                </table>                
+</body>
+</html>
+
